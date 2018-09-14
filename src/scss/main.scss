@@ -1,0 +1,43 @@
+@import "common/global.scss";
+
+@import "blocks/header.scss";
+@import "blocks/footer.scss";
+@import "blocks/settings-main.scss";
+
+* {
+    box-sizing: border-box;
+    font-family:  'Roboto', serif;
+    font-size: 14px;
+
+    @include respond-to-min($md) {
+        font-size: 16px;
+    }
+
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+body {
+    background: $colorGray;
+    background-repeat: no-repeat;
+}
+
+.box {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1328px;
+}
+
+.Auth-window {
+    position: relative;
+    padding-top: 64px;
+}

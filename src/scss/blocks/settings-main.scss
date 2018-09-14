@@ -1,0 +1,25 @@
+.settings-main {
+    background-color: $colorCommonBG;
+    min-height: 600px;
+    padding-top: 40px;
+
+    &__title {
+        margin-bottom: 30px;
+        font-size: 26px;
+        font-weight: 900;
+        color: $colorBlack;
+    }
+
+    &__text {
+        font-size: 21px;
+        font-weight: 700;
+        color: $colorBlack;
+        margin-bottom: 5px;
+    }
+}
+
+.mail-link {
+    color: $colorLightBlue;
+    font-size: 18px;
+    font-weight: bold;
+}

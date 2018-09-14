@@ -1,0 +1,6 @@
+.vscode
+node_modules
+package-lock.json
+.idea
+.DS_store
+src/scss/components

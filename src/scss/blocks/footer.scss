@@ -1,0 +1,68 @@
+.footer {
+    min-height: 175px;
+    background-color: $colorWhite;
+    border-top: 4px solid #EFEFEF;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include flex(space-between, center);
+
+    &__navbar {
+        max-width: 55%;
+        width: 100%;
+        margin-bottom: 10px;
+
+        @include flex();
+
+        @include respond-to-min($md) {
+            margin: 0;
+        }        
+    }
+
+    &__nav {
+        color: $colorLightBlue;
+        text-decoration: none;
+        margin-right: 20px;
+        cursor: pointer;
+
+        font-weight: 600;
+        line-height: 25px;
+    }
+}
+
+.social {
+    @include flex(space-between);
+
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include respond-to-min($md) {
+        margin: 0;
+    }
+}
+
+.social-icon {
+    width: 40px;
+    cursor: pointer;
+
+    &:hover {
+
+        .fb-1, .ld-1, .tw-2 {
+            stroke: $colorLightBlue;
+            stroke-width: 2px;
+        }
+    }
+}
+
+.fb-1{fill:#efefef;}.fb-2{fill:#8a8a8f;}
+
+.ld-1{fill:#efefef;}.ld-2{fill-opacity:0;}.ld-3{fill:#8a8a8f;}
+
+.fb-1{fill:#efefef;}.fb-2{fill:#8a8a8f;}.fb-3{fill-opacity:0;}
+
+.tw-1{fill-opacity:0;}.tw-2{fill:#efefef;}.tw-3{fill:#8a8a8f;}

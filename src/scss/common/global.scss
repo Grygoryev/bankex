@@ -1,0 +1,23 @@
+//resolutions
+$md: 736px;
+
+//colors
+$colorGray: #c4c4c4;
+$colorWhite: #fff;
+$colorBlack: #000;
+$colorCommonBG: #F9F9F9;
+$colorLightBlue: #0DA9FF;
+
+//mixins
+@mixin respond-to-min($width) {
+    @media (min-width: $width) {
+        @content
+    }
+}
+
+@mixin flex($justContent: flex-start, $alignItems: flex-start, $ff: row wrap) {
+    display: flex;
+    justify-content: $justContent;
+    align-items: $alignItems;
+    flex-flow: $ff;
+}
