@@ -28,12 +28,21 @@
         text-decoration: none;
         margin-right: 20px;
         cursor: pointer;
-
+        position: relative;
         font-weight: 700;
         line-height: 25px;
 
         &:hover {
-            border-bottom: 2px solid $colorLightBlue;
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                height: 2px;
+                width: 100%;
+                background-color: $colorLightBlue;
+            }
+            // border-bottom: 2px solid $colorLightBlue;
         }
     }
 }
