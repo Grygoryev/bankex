@@ -7,10 +7,13 @@ import TwitterIcon from './icons/TwitterIcon';
 const Social = () => {
     return (
         <div className="social">
-            <FaceBookIcon />
-            <LinkedInIcon />
-            <InstagramIcon />
-            <TwitterIcon />
+            <h2 className="social__title">Follow</h2>
+            <div className="social__icons">
+                <FaceBookIcon />
+                <LinkedInIcon />
+                <InstagramIcon />
+                <TwitterIcon />
+            </div>
         </div>
     )
 }

@@ -37,7 +37,7 @@
   min-height: 175px;
   background-color: #fff;
   border-top: 4px solid #EFEFEF;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -69,16 +69,23 @@
       border-bottom: 2px solid #0DA9FF; }
 
 .social {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-flow: row wrap;
   max-width: 200px;
   width: 100%;
   margin: 0 auto; }
   @media (min-width: 736px) {
     .social {
       margin: 0; } }
+  .social__title {
+    color: #8A8A8F;
+    margin-bottom: 10px; }
+    @media (min-width: 736px) {
+      .social__title {
+        margin-bottom: 20px; } }
+  .social__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap; }
 
 .social-icon {
   width: 40px;
@@ -122,7 +129,8 @@
 
 .settings-main {
   background-color: #F9F9F9;
-  min-height: 600px;
+  min-height: 100%;
+  min-height: calc(100vh - 175px);
   padding-top: 40px; }
   .settings-main__title {
     margin-bottom: 30px;
