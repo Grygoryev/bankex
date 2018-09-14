@@ -48,7 +48,7 @@
   align-items: center;
   flex-flow: row wrap; }
   .footer__navbar {
-    max-width: 55%;
+    max-width: 60%;
     width: 100%;
     margin-bottom: 10px;
     display: flex;
@@ -63,8 +63,10 @@
     text-decoration: none;
     margin-right: 20px;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 25px; }
+    .footer__nav:hover {
+      border-bottom: 2px solid #0DA9FF; }
 
 .social {
   display: flex;
@@ -130,13 +132,21 @@
   .settings-main__text {
     font-size: 21px;
     font-weight: 700;
-    color: #000;
-    margin-bottom: 5px; }
+    color: #000; }
+    @media (min-width: 736px) {
+      .settings-main__text {
+        max-width: 600px; } }
 
 .mail-link {
   color: #0DA9FF;
-  font-size: 18px;
-  font-weight: bold; }
+  font-size: 21px;
+  font-weight: 700;
+  display: block;
+  padding-top: 5px; }
+  @media (min-width: 736px) {
+    .mail-link {
+      display: inline;
+      padding-left: 5px; } }
 
 * {
   box-sizing: border-box;
@@ -166,5 +176,6 @@ body {
 
 .Auth-window {
   position: relative;
-  padding-top: 64px; }
+  padding-top: 64px;
+  min-height: 100vh; }
 
